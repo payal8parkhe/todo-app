@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Stack Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Full-Stack Todo App</h1>
+        <p>Powered by PostgreSQL + Express</p>
+        
+        <div class="todo-form">
+            <input type="text" id="todoInput" placeholder="Enter a new todo...">
+            <button onclick="addTodo()">Add Todo</button>
+        </div>
+        
+        <div id="todoList" class="todo-list"></div>
+        
+        <div class="status">
+            <div id="dbStatus" class="status-item">
+                <span class="status-dot"></span>
+                Checking database...
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
